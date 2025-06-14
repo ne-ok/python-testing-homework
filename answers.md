@@ -32,6 +32,7 @@ Pytest предоставляет удобное представление ош
 Декоратор @pytest.mark.parametrize позволяет многократно вызывать один и тот же тест с различными параметрами, передавая разные данные. Благодаря этому достигается экономия времени и сокращение дублирующего кода.
 
 - Пример использования:
+```
 import pytest
 
 @pytest.mark.parametrize(
@@ -41,7 +42,8 @@ import pytest
 def test_function(input_data, expected):
     result = my_function(input_data)
     assert result == expected
-    
+```
+
 ## 5. В каких случаях вы бы предпочли использовать pytest вместо unittest?
  Выбор пал бы на pytest в ситуациях, когда:
 
